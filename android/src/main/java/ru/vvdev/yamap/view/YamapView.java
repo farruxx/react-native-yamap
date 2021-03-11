@@ -66,6 +66,8 @@ public class YamapView extends MapView implements UserLocationObjectListener, Ca
         super(context);
         getMap().addCameraListener(this);
         getMap().addInputListener(this);
+        getMap().setRotateGesturesEnabled(false);
+        getMap().setTiltGesturesEnabled(false);
     }
 
     // ref methods
